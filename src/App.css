@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* global css for website */
+
+h1{
+    font-size: 4.5vw;
+    letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3{
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+h4{
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    word-spacing: 0.4vw;
+    letter-spacing: .8px;
+}
+h6{
+    font-size: 0.9rem;
+    font-family: 700;
+    color: #6CAA7F;
+    letter-spacing: .8px;
+}
+p{
+    font-size: .9rem;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+button{
+    background: cornflowerblue;
+    border: none;
+    padding: .7rem 1.3rem;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;  
 }
 
-.App-link {
-  color: #61dafb;
+hr{
+    background-color: #3bca77;
+    color: #138944;
+    height: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
